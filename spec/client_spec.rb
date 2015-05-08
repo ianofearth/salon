@@ -2,10 +2,10 @@ require("spec_helper")
 
 describe(Client) do
 
-	describe("#client_name") do
+	describe("#client") do
 		it("lets you enter a client") do
-			test_client = Client.new({:client_name => "ian", :stylist_id => 1})
-			expect(test_client.client_name()).to(eq("ian"))
+			test_client = Client.new({:test_client => "ian", :stylist_id => 1})
+			expect(test_client.client()).to(eq("ian"))
 		end
 	end
 	
