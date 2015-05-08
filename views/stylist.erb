@@ -13,7 +13,6 @@
 <% end %>
 
 <div class="container">
-	<a href="/">Home</a>
 	<p></p>
 	<a href="/stylists">View All Stylists</a>
 	<p></p>
@@ -22,3 +21,5 @@
 	<a href="/clients/<%= @stylist.id() %>">Add New Client</a>
 	<p></p>
 	<a href="/stylists/<%= @stylist.id() %>/edit">Edit <%= @stylist.stylist_name() %></a>
+	<p></p>
+	<a href="/"><button class="button btn">Return Home</a>
