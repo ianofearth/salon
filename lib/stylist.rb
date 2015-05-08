@@ -6,5 +6,16 @@ class Stylist
 		@id = attributes.fetch(:id)
 	end
 
+	define_singleton_method(:all) do
+		returned_stylists = DB.exec("SELECT * FROM stylists;")
+		stylists = []
+		returned_stylists.each() do |stylist|
+			stylist_name = list.fetch("stylist_name")
+			id = list.fetch("id").to_i()
+			stylists.push(Stylist.new({:stylist_name => stylist_name, :id => id}))
+		end
+		stylists
+	end
+
 
 end
