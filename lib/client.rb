@@ -18,5 +18,9 @@ class Client
 	# 	end
 	# end
 
+	define_method(:==) do |another_client|
+		self.client_name().==(another_client.client_name).&(self.stylist_id().==(another_client.stylist_id()))
+	end
+
 
 end

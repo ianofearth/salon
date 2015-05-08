@@ -24,11 +24,11 @@ describe(Client) do
 		end
 	end
 	
-	# describe(".all") do
-	# 	it("is empty at first") do
-	# 		expect(Client.all()).to(eq([]))
-	# 	end
-	# end
+	describe(".all") do
+		it("is empty at first") do
+			expect(Client.all()).to(eq([]))
+		end
+	end
 
 	
 end
