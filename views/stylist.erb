@@ -1,4 +1,4 @@
-<h1>Stylist: "<%= @stylist.stylist_name() %>"</h1>
+<h1><%= @stylist.stylist_name() %></h1>
 
 <% if @stylist.clients().any?() %>
 	<h3><%= @stylist.stylist_name() %>'s Clients:</h3>
@@ -20,3 +20,5 @@
 	<a href="/stylists/new">Add New Stylist</a>
 	<p></p>
 	<a href="/clients/<%= @stylist.id() %>">Add New Client</a>
+	<p></p>
+	
