@@ -1,13 +1,11 @@
 <h1>Current Stylists</h1>
 
 <% if @stylists.any? %>
-	<h3>Here are the available StylistsL</h3>
+	<h3>Here are the available Stylists</h3>
 
 	<ul>
 		<% @stylists.each do |stylist| %>
-		<li>
-			<a href="/stylists/<%= stylist.id() %>"><%= stylist.stylist_name() %></a>
-		</li>
+		<li><a href="/stylists/<%= stylist.id() %>"><%= stylist.stylist_name() %></a></li>
 		<% end %>
 	</ul>
 
